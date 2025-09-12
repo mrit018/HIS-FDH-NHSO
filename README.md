@@ -1,4 +1,4 @@
-# NHSO-Auto-Close-treatment-Golang
+# NHSO-Auto-Close-treatment-Yindee
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/audy018/nhso-auto-close-treatment-golang.git
+git remote add origin https://gitlab.com/audy018/nhso-auto-close-treatment-yindee.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/audy018/nhso-auto-close-treatment-golang/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/audy018/nhso-auto-close-treatment-yindee/-/settings/integrations)
 
 ## Collaborate with your team
 

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  nhsoauthclose:
+    build: .
+    container_name: nhsoauthclose
+    environment:
+      - TZ=Asia/Bangkok
+    volumes:
+      - ./.env:/app/.env
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+volumes:
+  logs:

@@ -1,0 +1,111 @@
+# ==============================================
+# Database Configuration
+# ==============================================
+
+# ชนิดของฐานข้อมูล (เลือกได้ระหว่าง mysql หรือ postgres)
+DB_TYPE=postgres
+
+# ==============================================
+# MySQL Configuration
+# ==============================================
+
+# โฮสต์ของ MySQL
+MYSQL_HOST=mysql-production-server
+
+# พอร์ตของ MySQL
+MYSQL_PORT=3306
+
+# ชื่อผู้ใช้ MySQL
+MYSQL_USER=nhso_user
+
+# รหัสผ่าน MySQL - ควรใช้รหัสผ่านที่แข็งแรง
+MYSQL_PASSWORD=strong_password_here
+
+# ชื่อฐานข้อมูล MySQL
+MYSQL_DATABASE=nhso_claim_prod
+
+# ==============================================
+# PostgreSQL Configuration
+# ==============================================
+
+# โฮสต์ของ PostgreSQL
+POSTGRES_HOST=192.168.5.2
+
+# พอร์ตของ PostgreSQL
+POSTGRES_PORT=5432
+
+# ชื่อผู้ใช้ PostgreSQL
+POSTGRES_USER=lphhos 
+
+# รหัสผ่าน PostgreSQL - ควรใช้รหัสผ่านที่แข็งแรง
+POSTGRES_PASSWORD=@13819*L#
+
+# ชื่อฐานข้อมูล PostgreSQL
+POSTGRES_DATABASE=Lpphos
+
+# SSL mode สำหรับ PostgreSQL (disable, require, verify-ca, verify-full)
+POSTGRES_SSLMODE=disable
+
+# ==============================================
+# Application Configuration
+# ==============================================
+
+# รหัสแหล่งที่มา (ตามที่ NHSO กำหนด)
+SOURCE_ID=DIY01
+
+# รหัสสถานพยาบาล (HCODE)
+HCODE=13819
+
+## 
+
+PTTYPE_CONDITION=AND T.pttype NOT IN ('10')
+
+# เลขประจำตัวประชาชนผู้บันทึกข้อมูล
+RECORDER_PID=3730101236849
+DEFAULT_RECORDER_PID=730101236849
+
+# ==============================================
+# NHSO API Configuration
+# ==============================================
+
+# URL ฐานของ NHSO API (สำหรับ production)
+NHSO_API_BASE_URL=https://nhsoapi.nhso.go.th/nhsoendpoint/
+#NHSO_API_BASE_URL=https://test.nhso.go.th/nhsoendpoint/
+
+# API Key สำหรับการเชื่อมต่อ NHSO API
+NHSO_API_KEY=a4362366-1ff4-4481-b62f-0fa250dbe75b
+
+# Timeout สำหรับการเรียก API (วินาที)
+NHSO_API_TIMEOUT=30
+
+# ==============================================
+# Logging Configuration
+# ==============================================
+
+# ระดับการบันทึก log (debug, info, warn, error)
+LOG_LEVEL=info
+
+# โฟลเดอร์สำหรับเก็บไฟล์ log
+LOG_DIR=/var/log/nhsoauthclose
+
+# ==============================================
+# Server Configuration
+# ==============================================
+
+# พอร์ตที่แอปพลิเคชันจะทำงาน
+SERVER_PORT=8080
+
+# โหมดการทำงาน (development, production)
+APP_ENV=production
+
+
+# User for system operations
+SYSTEM_USER=CLAIM_SYSTEM
+
+
+# Notification Configuration
+TELEGRAM_BOT_TOKEN="8023549759:AAGvdPF15JTj0obXWacHH3oimdRWOExmP4o"
+TELEGRAM_CHAT_ID="-4797879791"
+MORPROM_API_URL=https://api.morprom.com/notifications
+MORPROM_API_KEY=your_morprom_api_key_here
+LOG_DIR=./logs

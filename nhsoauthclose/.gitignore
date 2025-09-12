@@ -1,0 +1,20 @@
+# Environment variables
+.env
+
+# Binaries
+nhsoauthclose
+nhsoauthclose.exe
+
+# Database
+*.db
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
